@@ -1,0 +1,66 @@
+{
+  "name": "msp-widgets",
+  "description": "Multiservice platform (Мультисервисная платформа)",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alex Krapka",
+    "email": "d.n.baklay@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Frineds",
+      "email": "none@none.com"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "cli-color": "^1.2.0",
+    "compression": "^1.7.3",
+    "connect-bundle": "0.0.5-beta",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^1.1.6",
+    "express-handlebars": "^3.0.0",
+    "express-useragent": "^1.0.13",
+    "express-validator": "^6.3.0",
+    "font-awesome": "^4.7.0",
+    "helmet": "^3.21.2",
+    "http": "0.0.0",
+    "jquery": "^3.4.0",
+    "jszip": "^3.1.5",
+    "minimist": "^1.2.0",
+    "morgan": "^1.9.0",
+    "path": "^0.12.7",
+    "pdfmake": "^0.1.54",
+    "popper.js": "^1.15.0",
+    "readline-sync": "^1.4.9",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "*",
+    "pm2": "*",
+    "uglify-js": "*"
+  },
+  "keywords": [
+    "express",
+    "web",
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexKrapka/nodejs.msp"
+  },
+  "main": "msp.js",
+  "scripts": {
+    "start": "node msp",
+    "dev": "NODE_ENV=development nodemon msp",
+    "prod": "NODE_ENV=production node msp",
+    "win-dev": "set NODE_ENV=development&& nodemon msp",
+    "win-prod": "set NODE_ENV=production&& node msp"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}
